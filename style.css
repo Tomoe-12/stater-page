@@ -23,14 +23,15 @@
   box-sizing: border-box;
 }
 body{
+  height: 100vh;
   background-color: var(--color-neutral-very-dark-blue-line);
-  margin-top: 10%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container{
   width:400px;
-  height: 600px;
+  height: 630px;
   background-color: var(--color-neutral-very-dark-blue-bg-card);
   padding: 20px;
   display: flex;
@@ -40,11 +41,12 @@ body{
 }
 .image{
   width:  100%;
-  height: 63%;
-  background-image: url(images/image-equilibrium.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 0px ;
+  height: 60%;
+  border-radius: 15px;
+}
+img{
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
 }
 .text{
@@ -81,6 +83,7 @@ body{
   display: flex;
   align-items: center;
   margin-top: 20px;
+  gap: 10px;
 }
 .avatar{
   width: 40px;
@@ -93,7 +96,7 @@ body{
   display: flex;
   align-items: center;
   height: 100%;
-  margin-left: 15px;
+  gap: 5px;
   color: var(--color-primary-soft-blue);
 }
 .photo-text > span {
