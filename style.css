@@ -1,0 +1,109 @@
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --color-primary-soft-blue: hsl(215, 51%, 70%);
+  --color-primary-cyan: hsl(178, 100%, 50%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-very-dark-blue-bg: hsl(217, 54%, 11%);
+  --color-neutral-very-dark-blue-bg-card: hsl(216, 50%, 16%);
+  --color-neutral-very-dark-blue-line: hsl(215, 32%, 27%);
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: var(--font-weight-regular);
+}
+
+/*Global configuration*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--color-neutral-very-dark-blue-line);
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width:400px;
+  height: 600px;
+  background-color: var(--color-neutral-very-dark-blue-bg-card);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.image{
+  width:  100%;
+  height: 63%;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px ;
+  border-radius: 15px;
+}
+.text{
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+}
+.head{
+  margin-top: 15px;
+   display: flex;
+   font-size: 1.5em;
+   font-weight: var(--font-weight-semi-bold) ;
+   align-items: center;
+   color: var(--color-neutral-white);
+}
+.longText{
+  width: 100%;
+  color: var(--color-primary-soft-blue);
+}
+.priceAndTime{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-primary-soft-blue);
+}
+.price{
+  color: var(--color-primary-cyan);
+}
+.time{
+  color: var(--color-primary-soft-blue);
+}
+.pro{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-neutral-white);
+}
+.photo-text{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 15px;
+  color: var(--color-primary-soft-blue);
+}
+.photo-text > span {
+  color: var(--color-neutral-white);
+}
+.head:hover , .photo-text > span:hover{
+  color: var(--color-primary-cyan);
+  cursor: pointer;
+}
+
+
+
+
